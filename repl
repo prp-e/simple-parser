@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require './parser.rb'
+
+while true
+ print ">> "
+ program = gets.chomp
+ puts  Calcparser.module_eval(program, "simple.racc", 3)
+end
