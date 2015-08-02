@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby
 
 require './parser.rb'
+require 'pp'
 
 while true
  print ">> "
  program = gets.chomp
- puts  Calcparser.module_eval(program, "simple.racc", 3)
+ pp  Calcparser.module_eval(program, "simple.racc", 3)
 end
