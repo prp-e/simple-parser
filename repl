@@ -3,8 +3,8 @@
 require './parser.rb'
 require 'pp'
 
-#while true
+while true
  print ">> "
  program = gets.chomp
  pp  Calcparser.module_eval(program, "simple.racc", 3)
-#end
+end
